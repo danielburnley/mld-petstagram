@@ -1,23 +1,30 @@
 import React from 'react'
-import { string } from 'prop-types'
+import { string, bool } from 'prop-types'
 
 export default class Icon extends React.Component {
   static propTypes = {
     name: string.isRequired,
+    active: bool.isRequired
   }
 
-  icon () {
+  icon() {
     switch (this.props.name) {
-      case 'arrow-up': return '↑'
-      case 'arrow-right': return '→'
-      case 'arrow-down': return '↓'
-      case 'arrow-left': return '←'
+      case 'heart': return this.props.active ? "♥" : "♡"
+      case 'comment': return this.props.active ? "🗪" : "🗩"
     }
   }
 
   render () {
     return (
-      <span>{this.icon()}</span>
+      <div className="icon">
+        <style jsx>{`
+          .icon {
+            margin: 5px;
+            display: inline-block
+          }
+        `}</style>
+        <span>{this.icon()}</span>
+      </div>
     )
   }
 }
