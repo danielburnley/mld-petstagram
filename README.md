@@ -1,6 +1,7 @@
-# Component Based Design - Petstagram
 
-### Authors - danielburnley/camillavk
+# Component Based Design - Petstagram
+
+#### Authors - [danielburnley](http://github.com/danielburnley) / [camillavk](http://github.com/camillavk)
 
 ## Getting Started
 
