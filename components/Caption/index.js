@@ -35,8 +35,8 @@ export default class Caption extends React.Component {
             <CaptionText className="captionText" text={this.props.captionText} />
           </div>
           <div className="icons">
-            <Icon name="heart" active="false" />
-            <Icon name="comment" active="false" />
+            <Icon name="heart"/>
+            <Icon name="comment"/>
           </div>
         </div>
       </div>

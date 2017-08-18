@@ -17,11 +17,12 @@ export default class Post extends React.Component {
           .post {
             display: flex;
             flex-direction: column;
-            margin: 15px;
+            margin: 30px 0;
             padding: 10px;
             border: 1px solid grey;
             border-radius: 1%;
             box-shadow: 0px 8px 25px 6px rgba(143,141,143,1);
+            max-width: 600px;
           }
         `}</style>
         <Image imageUrl={this.props.imageUrl} />
