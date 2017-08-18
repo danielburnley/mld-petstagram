@@ -1,7 +1,7 @@
 import React from 'react'
 import { string } from 'prop-types'
 import CaptionText from './CaptionText'
-import Avatar from './Avatar'
+import Avatar from '../Avatar'
 import Icon from '../Icon'
 
 export default class Caption extends React.Component {
@@ -35,7 +35,7 @@ export default class Caption extends React.Component {
             <CaptionText className="captionText" text={this.props.captionText} />
           </div>
           <div className="icons">
-            <Icon name="heart"/>
+            <Icon name="heart" />
             <Icon name="comment"/>
           </div>
         </div>
